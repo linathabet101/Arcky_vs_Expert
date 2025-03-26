@@ -1,0 +1,12 @@
+# Python bytecode files
+*.pyc
+*.pyo
+
+# .env file to keep API keys secure
+.env
+
+# VS Code settings folder
+.vscode/
+
+# Other temporary files
+*.log
