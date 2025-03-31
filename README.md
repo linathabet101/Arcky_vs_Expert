@@ -6,7 +6,7 @@
 
 ## Overview
 
-Arckybot is a sleek AI assistant chatbot created with Streamlit and powered by Groq's LLaMa 3.2 90B model. With its distinctive purple-themed interface, Arckybot provides an intuitive chat experience for users seeking AI-powered guidance and troubleshooting assistance.
+Arckybot is a sleek AI assistant chatbot created with Streamlit and powered by Groq's LLaMa 3.2 90B model. Arckybot provides an intuitive chat experience for users seeking AI-powered guidance and troubleshooting assistance.
 
 ## Features
 
