@@ -1,74 +1,76 @@
- Arckybot - Your AI Assistant
+# Arckybot
 
-![logo](https://github.com/user-attachments/assets/ad887a34-b2e8-4ed4-8a48-8c6885dcd4e6)
+![Arckybot Logo](logo.png)
 
+Arckybot is an AI assistant developed with Streamlit and using the Groq API to answer questions and assist with problem solving.
 
+##  Features
+-  **Interactive chatbot** with a modern and fluid user interface
+-  **Use of Groq API** to generate precise responses
+-  **Customized interface** with a clean and pleasant style
+-  **Conversation history** to track exchanges
+-  **API key management** via a `.env` file
 
-## Overview
+##  Project structure
 
-Arckybot is a sleek AI assistant chatbot created with Streamlit and powered by Groq's LLaMa 3.2 90B model. Arckybot provides an intuitive chat experience for users seeking AI-powered guidance and troubleshooting assistance.
+![Capture d'écran 2025-03-31 014529](https://github.com/user-attachments/assets/ec62615c-3972-4e23-85dc-64ba5615f481)
 
-## Features
+- `streamlit_app.py`: Main application code
+- `.env`: Stores the Groq API key
+- `conversation_history.json`: Saves conversation history
+- `logo.png`: Application logo
+- `README.md`: Project documentation
 
-- **Custom UI**: Elegant chat interface with a distinctive purple color scheme
-- **Natural Responses**: Real-time typing animation for a more engaging experience
-- **Chat History**: Conversation tracking with timestamps for each message
-- **Advanced AI**: Integration with Groq's LLaMa 3.2 90B model for high-quality responses
-- **Responsive Design**: Clean layout that adapts to different screen sizes
-
-## Project Structure
-
-```
-arckybot/
-├── __pycache__/     # Python cache directory
-├── .env             # Environment variables file (API keys)
-├── .gitignore       # Git ignore rules
-├── conversation_history.json  # Conversation data storage
-├── logo.png         # Application logo
-├── README.md        # This documentation file
-└── streamlit_app.py # Main application code
-```
-
-## Setup Instructions
-
-1. Ensure you have Python 3.7+ installed
-2. Install the required dependencies:
-   ```bash
-   pip install streamlit requests python-dotenv
-   ```
-
-3. Create or edit your `.env` file with your Groq API key:
-   ```
-   GROQ_API_KEY=your_groq_api_key_here
-   ```
-
-4. Run the application:
-   ```bash
-   streamlit run streamlit_app.py
-   ```
-
-## Customization Options
-
-### Visual Theme
-Modify the CSS in the `set_page_style()` function to change colors, fonts, or layout elements.
-
-### AI Configuration
-Change the model or system prompt in the `generate_response()` method:
-
-```python
-payload = {
-    'model': 'llama-3.2-90b-vision-preview',  # Change model here
-    'messages': [
-        {"role": "system", "content": "You are Arckybot, a helpful AI assistant for troubleshooting and guidance."},  # Customize personality here
-        {"role": "user", "content": user_input}
-    ]
-}
+##  Installation and setup
+### 1️ Clone the repository
+```bash
+git clone https://github.com/linathabet101/Arckybot.git
+cd Arckybot
 ```
 
-## Requirements
+### 2️ Create virtual environment and install dependencies
+```bash
+python -m venv venv
+source venv/bin/activate  #  macOS/Linux
+venv\Scripts\activate  #  Windows
+pip install -r requirements.txt
+```
 
-- Python 3.7+
-- Streamlit
-- Requests
-- python-dotenv
-- Groq API access
+### 3️ Configure API Key
+Create a .env file at project root and add:
+```ini
+GROQ_API_KEY=your_api_key_here
+```
+
+### 4️ Launch the application
+```bash
+streamlit run streamlit_app.py
+```
+The application will be available at:  [http://localhost:8501](http://localhost:8501)
+
+
+![Capture d'écran 2025-03-31 024028](https://github.com/user-attachments/assets/8285a96e-a94d-4551-874c-c99e71c7260f)
+
+
+##  Usage
+1. Enter a question in the chat box.
+2. Arckybot generates a response using Groq API.3. Conversation history is displayed dynamically.
+
+##  Example
+
+![Capture d'écran 2025-03-31 023917](https://github.com/user-attachments/assets/a3527286-be92-4f96-91ed-bf9d19b881dc)
+
+
+
+
+
+
+
+
+
+
+
+
+##  Contact
+e-mail address: linathabet101@gmail.com
+
