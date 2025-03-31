@@ -1,6 +1,6 @@
  Arckybot - Your AI Assistant
 
-#![logo](https://github.com/user-attachments/assets/ad887a34-b2e8-4ed4-8a48-8c6885dcd4e6)
+![logo](https://github.com/user-attachments/assets/ad887a34-b2e8-4ed4-8a48-8c6885dcd4e6)
 
 
 
