@@ -1,71 +1,65 @@
 # Arckybot
 
-![Arckybot Logo](logo.png)
+![Arckybot Logo](Arcky.png)
 
 Arckybot is an AI assistant developed with Streamlit and using the Groq API to answer questions and assist with problem solving.
 
-##  Features
--  **Interactive chatbot** with a modern and fluid user interface
--  **Use of Groq API** to generate precise responses
--  **Customized interface** with a clean and pleasant style
--  **Conversation history** to track exchanges
--  **API key management** via a `.env` file
+# Arckybot vs Expert
 
-##  Project structure
+## Fonctionnalités
 
-![Capture d'écran 2025-03-31 014529](https://github.com/user-attachments/assets/ec62615c-3972-4e23-85dc-64ba5615f481)
+- Posez une question liée à une panne ou un problème de maintenance.
+- Obtenez une réponse générée par Arckybot.
+- Évaluez la qualité de la réponse (Correcte, Partiellement correcte, Incorrecte).
+- Proposez votre propre réponse d'expert pour gagner plus de points.
+- Système de score gamifié avec une **récompense finale** si vous atteignez 100 points !
+- Historique des questions, réponses et évaluations.
 
-- `streamlit_app.py`: Main application code
-- `.env`: Stores the Groq API key
-- `conversation_history.json`: Saves conversation history
-- `logo.png`: Application logo
-- `README.md`: Project documentation
+## Lancer l'application en local
 
-##  Installation and setup
-### 1️ Clone the repository
+### 1. Cloner le dépôt
+
 ```bash
-git clone https://github.com/linathabet101/Arckybot.git
-cd Arckybot
+git clone https://github.com/votre-utilisateur/arckybot-vs-expert.git
+cd arckybot-vs-expert
 ```
-
-### 2️ Create virtual environment and install dependencies
+## 2. Installer les dépendances
+Assurez-vous d’avoir Python 3.9+ installé.
 ```bash
-python -m venv venv
-source venv/bin/activate  #  macOS/Linux
-venv\Scripts\activate  #  Windows
 pip install -r requirements.txt
 ```
-
-### 3️ Configure API Key
-Create a .env file at project root and add:
-```ini
-GROQ_API_KEY=your_api_key_here
+## 3. Configurer la clé API
+Créez un fichier .env à la racine du projet et ajoutez votre clé Groq API :
+```env
+GROQ_API_KEY=your_groq_api_key_here
 ```
-
-### 4️ Launch the application
+## 4. Lancer l'application
 ```bash
-streamlit run streamlit_app.py
+streamlit run arckybot_app.py
 ```
-The application will be available at:  [http://localhost:8501](http://localhost:8501)
+## Fichier requirements.txt
+```txt
+streamlit
+requests
+python-dotenv
+```
+## Modèle utilisé
+Le modèle utilisé est :
+- Nom : llama-3.1-8b-instant
+- API : https://api.groq.com/openai/v1/chat/completions
+## Objectif du jeu
+Vous avez jusqu'à 15 questions pour accumuler 100 points. Évaluez objectivement Arckybot et contribuez avec votre propre expertise. Si vous atteignez 100 points, vous obtenez un code de réduction de 70% 🎁
 
+## Exemples de questions à poser
+- Pourquoi mon moteur triphasé surchauffe ?
+- Quelles sont les causes d'une pompe qui ne démarre pas ?
+- Comment diagnostiquer une panne intermittente sur un automate ?
 
-![Capture d'écran 2025-03-31 024028](https://github.com/user-attachments/assets/8285a96e-a94d-4551-874c-c99e71c7260f)
-
-
-##  Usage
-1. Enter a question in the chat box.
-2. Arckybot generates a response using Groq API.3. Conversation history is displayed dynamically.
-
-##  Example
-
-![Capture d'écran 2025-03-31 023917](https://github.com/user-attachments/assets/a3527286-be92-4f96-91ed-bf9d19b881dc)
-
-
-
-
-
-
-
+## À propos
+Ce projet a été développé dans un contexte d'exploration de l'IA générative appliquée à la maintenance. Il combine :
+- Interaction homme-machine via Streamlit
+- IA conversationnelle spécialisée
+- Interface ludique et interactive
 
 
 
